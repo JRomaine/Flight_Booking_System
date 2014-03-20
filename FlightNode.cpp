@@ -24,7 +24,7 @@ class FlightNode{
 		}
 };
 
-class FlightSouthWest{
+class FlightSouthWest : virtual public FlightNode{
 	public:
 		float getBaggageFees()
 		{
@@ -32,7 +32,7 @@ class FlightSouthWest{
 		}
 };
 
-class FlightUSAirway{
+class FlightUSAirway : virtual public FlightNode{
 	public:
 		float getBaggageFees()
 		{
@@ -40,7 +40,7 @@ class FlightUSAirway{
 		}
 };
 
-class FlightDelta{
+class FlightDelta : virtual public FlightNode{
 	public:
 		float getBaggageFees()
 		{
